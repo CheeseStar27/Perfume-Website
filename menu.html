@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Sillage</title>
+  <meta name="description" content="The Sillage fragrance menu: eight perfumes in three sizes, plus the discovery set, refills and scent consultations.">
+  <meta name="theme-color" content="#f7f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Sillage</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="menu.html" aria-current="page">Menu</a></li>
+          <li><a class="nav__link" href="showcase.html">Showcase</a></li>
+          <li><a class="nav__link" href="materials.html">Materials</a></li>
+          <li><a class="nav__link" href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Menu</p>
+        <h1 class="page-hero__title">The fragrance <em>menu</em></h1>
+        <p class="lead">Eight fragrances, each poured by hand in three sizes. Every flacon is refillable, and refills cost 25% less than a new bottle.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filter" role="group" aria-label="Filter by scent family" data-filter-group="menu-list">
+            <button class="filter__btn" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter__btn" type="button" data-filter="fresh" aria-pressed="false">Fresh</button>
+            <button class="filter__btn" type="button" data-filter="floral" aria-pressed="false">Floral</button>
+            <button class="filter__btn" type="button" data-filter="woody" aria-pressed="false">Woody</button>
+            <button class="filter__btn" type="button" data-filter="amber" aria-pressed="false">Amber &amp; Gourmand</button>
+          </div>
+          <p class="filter__count" data-filter-status="menu-list" data-noun="families" aria-live="polite">Showing all 4 families</p>
+        </div>
+
+        <div class="menu-card" id="menu-list">
+          <header class="menu-card__head">
+            <p class="menu-card__brand">Sillage</p>
+            <p class="menu-card__title">La carte des parfums</p>
+            <span class="menu-card__ornament" aria-hidden="true">✦ ✦ ✦</span>
+          </header>
+
+          <!-- Fresh -->
+          <section class="menu-section" id="fresh" data-family="fresh" aria-labelledby="fresh-title">
+            <header class="menu-section__head">
+              <h2 class="menu-section__title" id="fresh-title">Fresh</h2>
+              <p class="menu-section__desc">Citrus · Green · Airy</p>
+            </header>
+            <div class="menu-cols" aria-hidden="true"><span></span><span>30 ml</span><span>50 ml</span><span>100 ml</span></div>
+
+            <article class="menu-item" id="aube" style="--tint: #e3bf62">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°01</span> Aube</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $95</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $140</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $195</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Eau de Parfum</span> Bergamot, pink grapefruit, neroli, orange blossom, petitgrain, white musk, vetiver</p>
+            </article>
+
+            <article class="menu-item" id="figue-verte" style="--tint: #9aab6e">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°02</span> Figue Verte</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $95</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $140</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $195</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Eau de Parfum</span> Green mandarin, fig leaf, blackcurrant bud, fig milk, violet leaf, Atlas cedar, ambrette seed</p>
+            </article>
+          </section>
+
+          <!-- Floral -->
+          <section class="menu-section" id="floral" data-family="floral" aria-labelledby="floral-title">
+            <header class="menu-section__head">
+              <h2 class="menu-section__title" id="floral-title">Floral</h2>
+              <p class="menu-section__desc">Petals · Powder · Spice</p>
+            </header>
+            <div class="menu-cols" aria-hidden="true"><span></span><span>30 ml</span><span>50 ml</span><span>100 ml</span></div>
+
+            <article class="menu-item" id="rose-nocturne" style="--tint: #a8404f">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°03</span> Rose Nocturne</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $105</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $155</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $215</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Eau de Parfum</span> Pink pepper, lychee, Damask rose, geranium, patchouli, ambroxan</p>
+            </article>
+
+            <article class="menu-item" id="pluie-diris" style="--tint: #a99bc9">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°04</span> Pluie d’Iris</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $115</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $165</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $230</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Eau de Parfum</span> Bergamot, aldehydes, orris butter, violet, ambrette seed, suede, white musk</p>
+            </article>
+          </section>
+
+          <!-- Woody -->
+          <section class="menu-section" id="woody" data-family="woody" aria-labelledby="woody-title">
+            <header class="menu-section__head">
+              <h2 class="menu-section__title" id="woody-title">Woody</h2>
+              <p class="menu-section__desc">Sandalwood · Oud · Smoke</p>
+            </header>
+            <div class="menu-cols" aria-hidden="true"><span></span><span>30 ml</span><span>50 ml</span><span>100 ml</span></div>
+
+            <article class="menu-item" id="bois-clair" style="--tint: #d6b688">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°05</span> Bois Clair</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $105</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $155</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $215</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Eau de Parfum</span> Cardamom, violet leaf, iris, cedarwood, sandalwood, white musk</p>
+            </article>
+
+            <article class="menu-item" id="oud-fume" style="--tint: #4a2a1e">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°06</span> Oud Fumé</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $145</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $210</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $295</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Extrait de Parfum</span> Black pepper, elemi, oud, leather, frankincense, vetiver, labdanum, birch tar</p>
+            </article>
+          </section>
+
+          <!-- Amber & Gourmand -->
+          <section class="menu-section" id="amber" data-family="amber" aria-labelledby="amber-title">
+            <header class="menu-section__head">
+              <h2 class="menu-section__title" id="amber-title">Amber &amp; Gourmand</h2>
+              <p class="menu-section__desc">Resins · Vanilla · Warm spice</p>
+            </header>
+            <div class="menu-cols" aria-hidden="true"><span></span><span>30 ml</span><span>50 ml</span><span>100 ml</span></div>
+
+            <article class="menu-item" id="ambre-dore" style="--tint: #c27a2c">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°07</span> Ambre Doré</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $135</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $195</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $275</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Extrait de Parfum</span> Saffron, mandarin, labdanum, benzoin, vanilla, tonka bean, amber</p>
+            </article>
+
+            <article class="menu-item" id="vanille-sel" style="--tint: #e6d3a8">
+              <div class="menu-item__line">
+                <h3 class="menu-item__name"><span class="menu-item__swatch" aria-hidden="true"></span><span class="menu-item__num">N°08</span> Vanille Sel</h3>
+                <span class="menu-item__leader" aria-hidden="true"></span>
+              </div>
+              <p class="menu-item__price"><span class="menu-item__size">30 ml</span> $95</p>
+              <p class="menu-item__price"><span class="menu-item__size">50 ml</span> $140</p>
+              <p class="menu-item__price"><span class="menu-item__size">100 ml</span> $195</p>
+              <p class="menu-item__notes"><span class="menu-item__conc">Eau de Parfum</span> Sea salt, bergamot, vanilla absolute, orange blossom, tonka bean, driftwood, sandalwood</p>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sets & services -->
+    <section class="section section--paper" id="services">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Sets &amp; services</p>
+          <h2>Little extras, done properly</h2>
+          <p class="lead">Try before you commit, keep your bottle for years, and make it yours.</p>
+        </div>
+
+        <div class="services">
+          <article class="service" data-reveal>
+            <h3>Discovery Set</h3>
+            <p class="service__price">$38</p>
+            <p class="service__text">All eight fragrances in 2 ml vials. The full price is credited towards your first full-size bottle.</p>
+          </article>
+          <article class="service" data-reveal>
+            <h3>Refill</h3>
+            <p class="service__price">25% less</p>
+            <p class="service__text">Bring back any Sillage flacon, or order a refill pouch, and pay a quarter less than a new bottle.</p>
+          </article>
+          <article class="service" data-reveal>
+            <h3>Engraving</h3>
+            <p class="service__price">Complimentary</p>
+            <p class="service__text">Initials, a date or a short line engraved on the cap of any 50 ml or 100 ml bottle.</p>
+          </article>
+          <article class="service" data-reveal>
+            <h3>Scent consultation</h3>
+            <p class="service__price">$60</p>
+            <p class="service__text">Forty-five minutes at the atelier to find your fragrance, redeemable against any full-size purchase.</p>
+          </article>
+        </div>
+
+        <p class="fine-print">Prices are shown in US dollars. Gift wrapping is always complimentary.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">Sillage</a>
+          <p>Small-batch perfume, composed by hand and bottled in refillable glass since 2019.</p>
+        </div>
+        <div>
+          <h2 class="footer__title">Explore</h2>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Atelier</h2>
+          <ul class="footer__list">
+            <li>Tue – Fri · 11:00 – 19:00</li>
+            <li>Sat · 10:00 – 18:00</li>
+            <li>Consultations by appointment</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Contact</h2>
+          <ul class="footer__list">
+            <li><a href="mailto:hello@sillage.example">hello@sillage.example</a></li>
+            <li><a href="about.html#visit">Visit the atelier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Sillage. All rights reserved.</p>
+        <p>Vegan · Cruelty-free · Refillable</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

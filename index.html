@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sillage — Maison de Parfum</title>
+  <meta name="description" content="Sillage is an independent perfume house making small-batch fragrances from traceable materials, bottled in refillable glass.">
+  <meta name="theme-color" content="#f7f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Sillage</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="menu.html">Menu</a></li>
+          <li><a class="nav__link" href="showcase.html">Showcase</a></li>
+          <li><a class="nav__link" href="materials.html">Materials</a></li>
+          <li><a class="nav__link" href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Maison de parfum · Est. 2019</p>
+          <h1 class="hero__title">Leave a <em>trace</em>.</h1>
+          <p class="lead">Small-batch fragrances composed from honest materials — made to linger long after you’ve left the room.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="menu.html">Explore the menu</a>
+            <a class="btn btn--ghost" href="showcase.html">View the showcase</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__arch"></div>
+          <div class="hero__plinth"></div>
+          <div class="hero__bottle hero__bottle--left" data-bottle="round" data-liquid="#a8404f" data-cap="black" data-label="N°03"></div>
+          <div class="hero__bottle hero__bottle--center" data-bottle="tall" data-liquid="#e3bf62" data-cap="gold" data-label="N°01"></div>
+          <div class="hero__bottle hero__bottle--right" data-bottle="square" data-liquid="#d6b688" data-cap="wood" data-label="N°05"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials ticker -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <ul class="marquee__group">
+          <li>Calabrian bergamot</li>
+          <li>Damask rose</li>
+          <li>Tuscan orris</li>
+          <li>Haitian vetiver</li>
+          <li>Madagascan vanilla</li>
+          <li>Omani frankincense</li>
+          <li>Australian sandalwood</li>
+          <li>Tunisian neroli</li>
+        </ul>
+        <ul class="marquee__group" aria-hidden="true">
+          <li>Calabrian bergamot</li>
+          <li>Damask rose</li>
+          <li>Tuscan orris</li>
+          <li>Haitian vetiver</li>
+          <li>Madagascan vanilla</li>
+          <li>Omani frankincense</li>
+          <li>Australian sandalwood</li>
+          <li>Tunisian neroli</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <section class="section">
+      <div class="container intro__inner">
+        <div class="definition" data-reveal>
+          <p class="definition__word"><dfn>sillage</dfn></p>
+          <p class="definition__meta">/si·jaʒ/ · <em>noun, French</em></p>
+          <p class="definition__text">The trail a fragrance leaves in the air — the part of you that stays in the room after you have gone.</p>
+        </div>
+
+        <div data-reveal>
+          <p class="eyebrow">Our house</p>
+          <h2>Perfume, made the slow way.</h2>
+          <p>We named our house after the most elusive quality in perfumery, and every fragrance we make is built to earn it: composed by hand from traceable materials, rested for six weeks before bottling, and poured into glass you can refill for years.</p>
+          <dl class="stats">
+            <div><dt>Fragrances</dt><dd>8</dd></div>
+            <div><dt>Weeks of maceration</dt><dd>6</dd></div>
+            <div><dt>Bottles per batch</dt><dd>300</dd></div>
+          </dl>
+          <a class="link-arrow" href="about.html">Read our story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured fragrances -->
+    <section class="section section--paper">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">The collection</p>
+            <h2>Four to begin with</h2>
+          </div>
+          <a class="link-arrow" href="showcase.html">See all eight</a>
+        </div>
+
+        <div class="product-grid">
+          <a class="product-card" href="showcase.html#aube" style="--tint: #e3bf62" data-reveal>
+            <div class="product-card__stage">
+              <div class="product-card__bottle" data-bottle="tall" data-liquid="#e3bf62" data-cap="gold" data-label="N°01"></div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__meta">Fresh · Eau de Parfum</p>
+              <h3 class="product-card__name">Aube</h3>
+              <p class="product-card__notes">Bergamot, neroli, white musk</p>
+              <p class="product-card__price">From $95</p>
+            </div>
+          </a>
+
+          <a class="product-card" href="showcase.html#rose-nocturne" style="--tint: #a8404f" data-reveal>
+            <div class="product-card__stage">
+              <div class="product-card__bottle" data-bottle="round" data-liquid="#a8404f" data-cap="black" data-label="N°03"></div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__meta">Floral · Eau de Parfum</p>
+              <h3 class="product-card__name">Rose Nocturne</h3>
+              <p class="product-card__notes">Pink pepper, Damask rose, patchouli</p>
+              <p class="product-card__price">From $105</p>
+            </div>
+          </a>
+
+          <a class="product-card" href="showcase.html#bois-clair" style="--tint: #d6b688" data-reveal>
+            <div class="product-card__stage">
+              <div class="product-card__bottle" data-bottle="square" data-liquid="#d6b688" data-cap="wood" data-label="N°05"></div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__meta">Woody · Eau de Parfum</p>
+              <h3 class="product-card__name">Bois Clair</h3>
+              <p class="product-card__notes">Cardamom, iris, sandalwood</p>
+              <p class="product-card__price">From $105</p>
+            </div>
+          </a>
+
+          <a class="product-card" href="showcase.html#ambre-dore" style="--tint: #c27a2c" data-reveal>
+            <div class="product-card__stage">
+              <div class="product-card__bottle" data-bottle="round" data-liquid="#c27a2c" data-cap="gold" data-label="N°07"></div>
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__meta">Amber · Extrait de Parfum</p>
+              <h3 class="product-card__name">Ambre Doré</h3>
+              <p class="product-card__notes">Saffron, labdanum, vanilla</p>
+              <p class="product-card__price">From $135</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scent families -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Scent families</p>
+          <h2>Find the family you belong to</h2>
+          <p class="lead">Not sure where to start? Choose the mood you want to wear, then explore the fragrances within it.</p>
+        </div>
+
+        <div class="family-grid">
+          <a class="family-tile" href="menu.html#fresh" style="--from: #f1dc94; --to: #9aab6e" data-reveal>
+            <span class="family-tile__swatch" aria-hidden="true"></span>
+            <h3 class="family-tile__name">Fresh</h3>
+            <p class="family-tile__desc">Citrus peel, green leaves and airy musks for bright days.</p>
+            <p class="family-tile__list">Aube · Figue Verte</p>
+          </a>
+          <a class="family-tile" href="menu.html#floral" style="--from: #f0c4c6; --to: #a99bc9" data-reveal>
+            <span class="family-tile__swatch" aria-hidden="true"></span>
+            <h3 class="family-tile__name">Floral</h3>
+            <p class="family-tile__desc">Velvet petals, powdery iris and a flicker of pink pepper.</p>
+            <p class="family-tile__list">Rose Nocturne · Pluie d’Iris</p>
+          </a>
+          <a class="family-tile" href="menu.html#woody" style="--from: #e6cfa6; --to: #6b4a35" data-reveal>
+            <span class="family-tile__swatch" aria-hidden="true"></span>
+            <h3 class="family-tile__name">Woody</h3>
+            <p class="family-tile__desc">Creamy sandalwood, smoky oud and dry vetiver roots.</p>
+            <p class="family-tile__list">Bois Clair · Oud Fumé</p>
+          </a>
+          <a class="family-tile" href="menu.html#amber" style="--from: #f0d9a8; --to: #c27a2c" data-reveal>
+            <span class="family-tile__swatch" aria-hidden="true"></span>
+            <h3 class="family-tile__name">Amber &amp; Gourmand</h3>
+            <p class="family-tile__desc">Glowing resins, vanilla and warm spice for candlelit hours.</p>
+            <p class="family-tile__list">Ambre Doré · Vanille Sel</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discovery set -->
+    <section class="section cta">
+      <div class="container cta__inner">
+        <div class="vial-row" aria-hidden="true" data-reveal>
+          <div data-bottle="tall" data-liquid="#e3bf62" data-cap="gold"></div>
+          <div data-bottle="square" data-liquid="#9aab6e" data-cap="wood"></div>
+          <div data-bottle="round" data-liquid="#a8404f" data-cap="black"></div>
+          <div data-bottle="tall" data-liquid="#a99bc9" data-cap="silver"></div>
+          <div data-bottle="square" data-liquid="#d6b688" data-cap="wood"></div>
+          <div data-bottle="tall" data-liquid="#4a2a1e" data-cap="black"></div>
+          <div data-bottle="round" data-liquid="#c27a2c" data-cap="gold"></div>
+          <div data-bottle="round" data-liquid="#e6d3a8" data-cap="silver"></div>
+        </div>
+        <div data-reveal>
+          <p class="eyebrow">The discovery set</p>
+          <h2>Not sure where to <em>begin</em>?</h2>
+          <p class="lead">All eight fragrances in 2 ml vials — enough to wear each one for a few days. $38, credited towards your first full-size bottle.</p>
+          <a class="btn btn--light" href="menu.html#services">See sets &amp; services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materials teaser -->
+    <section class="section section--sand">
+      <div class="container split">
+        <div data-reveal>
+          <p class="eyebrow">Materials</p>
+          <h2>Made from things we can trace.</h2>
+          <p class="lead">Bergamot pressed in Calabria. Orris roots dried for three years in Tuscany. Vanilla cured by hand in Madagascar. We know where our materials come from, and we’ll tell you.</p>
+          <a class="btn btn--ghost" href="materials.html">Explore the materials</a>
+        </div>
+
+        <ul class="origin-list" data-reveal>
+          <li style="--swatch: #e3c65b"><span class="origin-list__swatch" aria-hidden="true"></span><span class="origin-list__name">Bergamot</span><span class="origin-list__place">Calabria, Italy</span></li>
+          <li style="--swatch: #b5a7cf"><span class="origin-list__swatch" aria-hidden="true"></span><span class="origin-list__name">Orris butter</span><span class="origin-list__place">Tuscany, Italy</span></li>
+          <li style="--swatch: #c56a7b"><span class="origin-list__swatch" aria-hidden="true"></span><span class="origin-list__name">Damask rose</span><span class="origin-list__place">Isparta, Turkey</span></li>
+          <li style="--swatch: #8a7a52"><span class="origin-list__swatch" aria-hidden="true"></span><span class="origin-list__name">Vetiver</span><span class="origin-list__place">Haiti</span></li>
+          <li style="--swatch: #d9b98a"><span class="origin-list__swatch" aria-hidden="true"></span><span class="origin-list__name">Vanilla</span><span class="origin-list__place">SAVA, Madagascar</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">Sillage</a>
+          <p>Small-batch perfume, composed by hand and bottled in refillable glass since 2019.</p>
+        </div>
+        <div>
+          <h2 class="footer__title">Explore</h2>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Atelier</h2>
+          <ul class="footer__list">
+            <li>Tue – Fri · 11:00 – 19:00</li>
+            <li>Sat · 10:00 – 18:00</li>
+            <li>Consultations by appointment</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Contact</h2>
+          <ul class="footer__list">
+            <li><a href="mailto:hello@sillage.example">hello@sillage.example</a></li>
+            <li><a href="about.html#visit">Visit the atelier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Sillage. All rights reserved.</p>
+        <p>Vegan · Cruelty-free · Refillable</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

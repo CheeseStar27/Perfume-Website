@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materials — Sillage</title>
+  <meta name="description" content="The raw materials behind Sillage fragrances: where they come from, how they are extracted and which perfumes use them.">
+  <meta name="theme-color" content="#f7f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">Sillage</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="menu.html">Menu</a></li>
+          <li><a class="nav__link" href="showcase.html">Showcase</a></li>
+          <li><a class="nav__link" href="materials.html" aria-current="page">Materials</a></li>
+          <li><a class="nav__link" href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Materials</p>
+        <h1 class="page-hero__title">What our fragrances are <em>made of</em></h1>
+        <p class="lead">Around forty raw materials pass through our atelier. Some are grown in fields we have visited, others are built molecule by molecule in the lab. Here are the ones that matter most.</p>
+      </div>
+    </section>
+
+    <!-- How a fragrance unfolds -->
+    <section class="section">
+      <div class="container pyramid-wrap">
+        <figure class="pyramid-figure" data-reveal>
+          <svg viewBox="0 0 400 350" role="img" aria-labelledby="pyramid-title">
+            <title id="pyramid-title">The fragrance pyramid: top notes at the tip, heart notes in the middle and base notes at the foundation.</title>
+            <polygon points="200,6 262,112 138,112" fill="#ecd9a2"/>
+            <polygon points="135,118 265,118 326,224 74,224" fill="#d9a9a5"/>
+            <polygon points="71,230 329,230 394,344 6,344" fill="#7d5f43"/>
+            <text class="pyramid-label" x="200" y="90" text-anchor="middle">TOP</text>
+            <text class="pyramid-label" x="200" y="178" text-anchor="middle">HEART</text>
+            <text class="pyramid-label pyramid-label--light" x="200" y="294" text-anchor="middle">BASE</text>
+          </svg>
+        </figure>
+
+        <div data-reveal>
+          <p class="eyebrow">How a fragrance unfolds</p>
+          <h2>Top, heart and base</h2>
+          <p class="lead">A perfume isn’t one smell but a sequence. Lighter materials evaporate first and heavier ones last, so a fragrance changes on your skin over the course of a day.</p>
+          <ol class="tier-list">
+            <li style="--dot: #ecd9a2">
+              <span class="tier-list__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Top notes <span class="tier-list__time">First 15 minutes</span></h3>
+                <p>Bright, volatile materials such as citrus, light spices and aldehydes. They make the first impression, then lift away.</p>
+              </div>
+            </li>
+            <li style="--dot: #d9a9a5">
+              <span class="tier-list__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Heart notes <span class="tier-list__time">15 minutes – 4 hours</span></h3>
+                <p>Florals, greens and soft spices emerge as the top fades. This is the character of the fragrance, and what most people remember.</p>
+              </div>
+            </li>
+            <li style="--dot: #7d5f43">
+              <span class="tier-list__dot" aria-hidden="true"></span>
+              <div>
+                <h3>Base notes <span class="tier-list__time">4 hours and beyond</span></h3>
+                <p>Woods, resins, musks and vanilla evaporate slowly, anchoring everything and lingering on skin into the next day.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Material library -->
+    <section class="section section--paper" aria-labelledby="library-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The library</p>
+          <h2 id="library-title">Twenty-three materials we love</h2>
+          <p class="lead">Where each one comes from, how it is extracted and which of our fragrances it appears in.</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter" role="group" aria-label="Filter materials by family" data-filter-group="material-list">
+            <button class="filter__btn" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter__btn" type="button" data-filter="citrus" aria-pressed="false">Citrus</button>
+            <button class="filter__btn" type="button" data-filter="floral" aria-pressed="false">Floral</button>
+            <button class="filter__btn" type="button" data-filter="woods" aria-pressed="false">Woods</button>
+            <button class="filter__btn" type="button" data-filter="resins" aria-pressed="false">Resins</button>
+            <button class="filter__btn" type="button" data-filter="spices" aria-pressed="false">Spices</button>
+            <button class="filter__btn" type="button" data-filter="gourmand" aria-pressed="false">Gourmand</button>
+            <button class="filter__btn" type="button" data-filter="musks" aria-pressed="false">Musks &amp; accords</button>
+          </div>
+          <p class="filter__count" data-filter-status="material-list" data-noun="materials" aria-live="polite">Showing all 23 materials</p>
+        </div>
+
+        <div class="material-grid" id="material-list">
+          <!-- Citrus -->
+          <article class="material" data-family="citrus" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #e3c65b" aria-hidden="true"></span>
+              <p class="material__family">Citrus</p>
+            </div>
+            <h3 class="material__name">Bergamot</h3>
+            <p class="material__latin">Citrus bergamia</p>
+            <p class="material__desc">Sparkling and bittersweet, with a faint floral edge: the brightest light in our citrus palette.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Calabria, Italy</dd></div>
+              <div><dt>Method</dt><dd>Cold-pressed peel</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#aube">Aube</a>, <a href="showcase.html#pluie-diris">Pluie d’Iris</a>, <a href="showcase.html#vanille-sel">Vanille Sel</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="citrus" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #f0dfb0" aria-hidden="true"></span>
+              <p class="material__family">Citrus</p>
+            </div>
+            <h3 class="material__name">Neroli &amp; orange blossom</h3>
+            <p class="material__latin">Citrus aurantium</p>
+            <p class="material__desc">One blossom, two personalities: neroli is green and honeyed, while the absolute is heady and sensual.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Nabeul, Tunisia</dd></div>
+              <div><dt>Method</dt><dd>Steam distillation (neroli) and solvent extraction (absolute)</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#aube">Aube</a>, <a href="showcase.html#vanille-sel">Vanille Sel</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="citrus" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #e9a34a" aria-hidden="true"></span>
+              <p class="material__family">Citrus</p>
+            </div>
+            <h3 class="material__name">Mandarin</h3>
+            <p class="material__latin">Citrus reticulata</p>
+            <p class="material__desc">Juicier and softer than orange. Picked green for zest, or ripe for sweetness.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Sicily, Italy</dd></div>
+              <div><dt>Method</dt><dd>Cold-pressed peel</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#figue-verte">Figue Verte</a>, <a href="showcase.html#ambre-dore">Ambre Doré</a></dd></div>
+            </dl>
+          </article>
+
+          <!-- Floral -->
+          <article class="material" data-family="floral" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #c56a7b" aria-hidden="true"></span>
+              <p class="material__family">Floral</p>
+            </div>
+            <h3 class="material__name">Damask rose</h3>
+            <p class="material__latin">Rosa × damascena</p>
+            <p class="material__desc">Petals are picked by hand at dawn, and it takes around four tonnes of them to make a single kilo of rose oil.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Isparta, Turkey</dd></div>
+              <div><dt>Method</dt><dd>Steam distillation and solvent extraction</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#rose-nocturne">Rose Nocturne</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="floral" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #b5a7cf" aria-hidden="true"></span>
+              <p class="material__family">Floral</p>
+            </div>
+            <h3 class="material__name">Orris butter</h3>
+            <p class="material__latin">Iris pallida</p>
+            <p class="material__desc">Powdery, violet-like and faintly earthy. One of the most precious materials in perfumery.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Tuscany, Italy</dd></div>
+              <div><dt>Method</dt><dd>Roots dried for three years, then steam-distilled</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#pluie-diris">Pluie d’Iris</a>, <a href="showcase.html#bois-clair">Bois Clair</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="floral" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #7f9a6a" aria-hidden="true"></span>
+              <p class="material__family">Floral</p>
+            </div>
+            <h3 class="material__name">Violet leaf</h3>
+            <p class="material__latin">Viola odorata</p>
+            <p class="material__desc">Green, watery and cucumber-crisp. Nothing like the flower, and all the better for it.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Egypt</dd></div>
+              <div><dt>Method</dt><dd>Solvent-extracted absolute</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#figue-verte">Figue Verte</a>, <a href="showcase.html#bois-clair">Bois Clair</a></dd></div>
+            </dl>
+          </article>
+
+          <!-- Woods -->
+          <article class="material" data-family="woods" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #d8b58a" aria-hidden="true"></span>
+              <p class="material__family">Woods</p>
+            </div>
+            <h3 class="material__name">Sandalwood</h3>
+            <p class="material__latin">Santalum album</p>
+            <p class="material__desc">Creamy, milky and softly sweet. Ours comes from plantations, never from wild trees.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Northern Australia</dd></div>
+              <div><dt>Method</dt><dd>Steam-distilled heartwood</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#bois-clair">Bois Clair</a>, <a href="showcase.html#vanille-sel">Vanille Sel</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="woods" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #b98d5e" aria-hidden="true"></span>
+              <p class="material__family">Woods</p>
+            </div>
+            <h3 class="material__name">Cedarwood</h3>
+            <p class="material__latin">Cedrus atlantica</p>
+            <p class="material__desc">Dry and clean as pencil shavings. It gives a fragrance its backbone.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Atlas Mountains, Morocco</dd></div>
+              <div><dt>Method</dt><dd>Steam-distilled wood</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#figue-verte">Figue Verte</a>, <a href="showcase.html#bois-clair">Bois Clair</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="woods" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #8a7a52" aria-hidden="true"></span>
+              <p class="material__family">Woods</p>
+            </div>
+            <h3 class="material__name">Vetiver</h3>
+            <p class="material__latin">Chrysopogon zizanioides</p>
+            <p class="material__desc">Earthy, smoky and grapefruit-bright. Haiti grows some of the finest in the world.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Haiti</dd></div>
+              <div><dt>Method</dt><dd>Steam-distilled roots</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#aube">Aube</a>, <a href="showcase.html#oud-fume">Oud Fumé</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="woods" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #4b2a1f" aria-hidden="true"></span>
+              <p class="material__family">Woods</p>
+            </div>
+            <h3 class="material__name">Oud</h3>
+            <p class="material__latin">Aquilaria species</p>
+            <p class="material__desc">Formed when agarwood trees defend themselves against infection. We only use plantation-grown, CITES-certified oud.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Plantations in Southeast Asia</dd></div>
+              <div><dt>Method</dt><dd>Hydro-distilled resinous heartwood</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#oud-fume">Oud Fumé</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="woods" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #6b4a35" aria-hidden="true"></span>
+              <p class="material__family">Woods</p>
+            </div>
+            <h3 class="material__name">Patchouli</h3>
+            <p class="material__latin">Pogostemon cablin</p>
+            <p class="material__desc">Dark, earthy and cocoa-tinged. The leaves are dried and lightly fermented before distillation.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Sulawesi, Indonesia</dd></div>
+              <div><dt>Method</dt><dd>Steam-distilled dried leaves</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#rose-nocturne">Rose Nocturne</a></dd></div>
+            </dl>
+          </article>
+
+          <!-- Resins -->
+          <article class="material" data-family="resins" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #9a5b2a" aria-hidden="true"></span>
+              <p class="material__family">Resins</p>
+            </div>
+            <h3 class="material__name">Labdanum</h3>
+            <p class="material__latin">Cistus ladanifer</p>
+            <p class="material__desc">The heart of every amber: resinous, leathery and warm, gathered from a sticky Mediterranean shrub.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Andalusia, Spain</dd></div>
+              <div><dt>Method</dt><dd>Resin extracted from rockrose</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#oud-fume">Oud Fumé</a>, <a href="showcase.html#ambre-dore">Ambre Doré</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="resins" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #c38a4a" aria-hidden="true"></span>
+              <p class="material__family">Resins</p>
+            </div>
+            <h3 class="material__name">Benzoin</h3>
+            <p class="material__latin">Styrax tonkinensis</p>
+            <p class="material__desc">Balsamic and vanilla-sweet. It softens and lengthens everything around it.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Laos</dd></div>
+              <div><dt>Method</dt><dd>Tapped resin, extracted as a resinoid</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#ambre-dore">Ambre Doré</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="resins" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #d6cfb8" aria-hidden="true"></span>
+              <p class="material__family">Resins</p>
+            </div>
+            <h3 class="material__name">Frankincense</h3>
+            <p class="material__latin">Boswellia sacra</p>
+            <p class="material__desc">Bright, peppery smoke with a lemony lift: the scent of cool stone churches.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Dhofar, Oman</dd></div>
+              <div><dt>Method</dt><dd>Steam-distilled resin</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#oud-fume">Oud Fumé</a></dd></div>
+            </dl>
+          </article>
+
+          <!-- Spices -->
+          <article class="material" data-family="spices" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #d27a86" aria-hidden="true"></span>
+              <p class="material__family">Spices</p>
+            </div>
+            <h3 class="material__name">Pink pepper</h3>
+            <p class="material__latin">Schinus terebinthifolia</p>
+            <p class="material__desc">Not a true pepper at all: rosy, fizzy and gently spicy.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Réunion Island</dd></div>
+              <div><dt>Method</dt><dd>CO₂-extracted berries</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#rose-nocturne">Rose Nocturne</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="spices" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #9cae7c" aria-hidden="true"></span>
+              <p class="material__family">Spices</p>
+            </div>
+            <h3 class="material__name">Cardamom</h3>
+            <p class="material__latin">Elettaria cardamomum</p>
+            <p class="material__desc">Cool, green and aromatic, with a eucalyptus freshness that lifts warm woods.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Guatemala</dd></div>
+              <div><dt>Method</dt><dd>CO₂-extracted seeds</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#bois-clair">Bois Clair</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="spices" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #c8562e" aria-hidden="true"></span>
+              <p class="material__family">Spices</p>
+            </div>
+            <h3 class="material__name">Saffron</h3>
+            <p class="material__latin">Crocus sativus · accord</p>
+            <p class="material__desc">Leathery, honeyed and slightly metallic. Natural saffron extract is scarce, so we rebuild its glow ourselves.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Accord inspired by Iranian saffron</dd></div>
+              <div><dt>Method</dt><dd>Built in the lab around safranal</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#ambre-dore">Ambre Doré</a></dd></div>
+            </dl>
+          </article>
+
+          <!-- Gourmand -->
+          <article class="material" data-family="gourmand" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #d9b98a" aria-hidden="true"></span>
+              <p class="material__family">Gourmand</p>
+            </div>
+            <h3 class="material__name">Vanilla</h3>
+            <p class="material__latin">Vanilla planifolia</p>
+            <p class="material__desc">Hand-pollinated flowers and pods cured for months: smoky, boozy and far richer than any dessert.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>SAVA region, Madagascar</dd></div>
+              <div><dt>Method</dt><dd>Cured pods, CO₂-extracted</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#ambre-dore">Ambre Doré</a>, <a href="showcase.html#vanille-sel">Vanille Sel</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="gourmand" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #8b5a3c" aria-hidden="true"></span>
+              <p class="material__family">Gourmand</p>
+            </div>
+            <h3 class="material__name">Tonka bean</h3>
+            <p class="material__latin">Dipteryx odorata</p>
+            <p class="material__desc">Almond, hay and tobacco in one wrinkled seed, rich in natural coumarin.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Venezuela</dd></div>
+              <div><dt>Method</dt><dd>Solvent-extracted absolute</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#ambre-dore">Ambre Doré</a>, <a href="showcase.html#vanille-sel">Vanille Sel</a></dd></div>
+            </dl>
+          </article>
+
+          <!-- Musks & accords -->
+          <article class="material" data-family="musks" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #c9b99a" aria-hidden="true"></span>
+              <p class="material__family">Musks &amp; accords</p>
+            </div>
+            <h3 class="material__name">Ambrette seed</h3>
+            <p class="material__latin">Abelmoschus moschatus</p>
+            <p class="material__desc">A plant-based musk: soft, pear-skin fruity and warm, without any animal involved.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Ecuador</dd></div>
+              <div><dt>Method</dt><dd>Steam-distilled seeds</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#figue-verte">Figue Verte</a>, <a href="showcase.html#pluie-diris">Pluie d’Iris</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="musks" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #ece6dc" aria-hidden="true"></span>
+              <p class="material__family">Musks &amp; accords</p>
+            </div>
+            <h3 class="material__name">White musk</h3>
+            <p class="material__latin">Macrocyclic musks</p>
+            <p class="material__desc">Clean, skin-like warmth. Modern lab-made musks replace animal musk entirely.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Made in the lab</dd></div>
+              <div><dt>Method</dt><dd>Synthesised</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#aube">Aube</a>, <a href="showcase.html#pluie-diris">Pluie d’Iris</a>, <a href="showcase.html#bois-clair">Bois Clair</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="musks" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #d9c7a0" aria-hidden="true"></span>
+              <p class="material__family">Musks &amp; accords</p>
+            </div>
+            <h3 class="material__name">Ambroxan</h3>
+            <p class="material__latin">From Salvia sclarea</p>
+            <p class="material__desc">Warm, mineral and radiant: the molecule that lets us evoke ambergris without the whale.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Made from clary sage</dd></div>
+              <div><dt>Method</dt><dd>Synthesised from sclareol</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#rose-nocturne">Rose Nocturne</a>, <a href="showcase.html#vanille-sel">Vanille Sel</a></dd></div>
+            </dl>
+          </article>
+
+          <article class="material" data-family="musks" data-reveal>
+            <div class="material__top">
+              <span class="material__swatch" style="--swatch: #9fae74" aria-hidden="true"></span>
+              <p class="material__family">Musks &amp; accords</p>
+            </div>
+            <h3 class="material__name">Fig accord</h3>
+            <p class="material__latin">Ficus carica · accord</p>
+            <p class="material__desc">Natural fig leaf absolute is prohibited in perfumery, so we build its green, milky shade ourselves.</p>
+            <dl class="material__meta">
+              <div><dt>Origin</dt><dd>Made in the lab</dd></div>
+              <div><dt>Method</dt><dd>Composed from green and milky molecules</dd></div>
+              <div><dt>Found in</dt><dd><a href="showcase.html#figue-verte">Figue Verte</a></dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concentration -->
+    <section class="section" aria-labelledby="concentration-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Strength</p>
+          <h2 id="concentration-title">Concentration, explained</h2>
+          <p class="lead">The name on the bottle tells you how much aromatic oil is dissolved in the alcohol. More oil means a richer scent that lasts longer on skin.</p>
+        </div>
+
+        <table class="conc-table" data-reveal>
+          <caption class="visually-hidden">Perfume strengths compared: share of aromatic oils, how long each typically lasts, and where Sillage blends</caption>
+          <thead>
+            <tr>
+              <th scope="col">Strength</th>
+              <th scope="col">Aromatic oils</th>
+              <th scope="col">Lasts</th>
+              <th scope="col" class="conc-table__chart-col">
+                <span class="conc-scale" aria-hidden="true"><span style="--at: 0">0%</span><span style="--at: 10">10%</span><span style="--at: 20">20%</span><span style="--at: 30">30%</span></span>
+                <span class="visually-hidden">Range chart, 0 to 30%</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Eau de Toilette</th>
+              <td><span class="conc-table__range">5–15%</span><span class="conc-table__note">Not part of our collection</span></td>
+              <td>3–5 hours</td>
+              <td class="conc-table__chart-col"><div class="conc-bar" aria-hidden="true"><span class="conc-bar__range" style="--from: 5; --to: 15"></span></div><span class="conc-scale conc-scale--inline" aria-hidden="true"><span style="--at: 0">0%</span><span style="--at: 10">10%</span><span style="--at: 20">20%</span><span style="--at: 30">30%</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Eau de Parfum</th>
+              <td><span class="conc-table__range">15–20%</span><span class="conc-table__note">Ours: 18%, for six fragrances</span></td>
+              <td>6–8 hours</td>
+              <td class="conc-table__chart-col"><div class="conc-bar" aria-hidden="true"><span class="conc-bar__range" style="--from: 15; --to: 20"></span><span class="conc-bar__ours" style="--at: 18"></span></div><span class="conc-scale conc-scale--inline" aria-hidden="true"><span style="--at: 0">0%</span><span style="--at: 10">10%</span><span style="--at: 20">20%</span><span style="--at: 30">30%</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row">Extrait de Parfum</th>
+              <td><span class="conc-table__range">20–30%</span><span class="conc-table__note">Ours: 25%, for Oud Fumé and Ambre Doré</span></td>
+              <td>8–12+ hours</td>
+              <td class="conc-table__chart-col"><div class="conc-bar" aria-hidden="true"><span class="conc-bar__range" style="--from: 20; --to: 30"></span><span class="conc-bar__ours" style="--at: 25"></span></div><span class="conc-scale conc-scale--inline" aria-hidden="true"><span style="--at: 0">0%</span><span style="--at: 10">10%</span><span style="--at: 20">20%</span><span style="--at: 30">30%</span></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul class="conc-legend" aria-hidden="true">
+          <li><span class="conc-legend__key"></span>Typical range</li>
+          <li><span class="conc-legend__key conc-legend__key--dot"></span>Where Sillage blends</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sourcing promise -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our promise</p>
+          <h2>How we choose what goes in</h2>
+        </div>
+
+        <ul class="feature-grid">
+          <li class="feature" data-reveal>
+            <span class="feature__num">i.</span>
+            <h3>Traceable naturals</h3>
+            <p>We buy from growers and distillers we know by name, and we publish the origin of every key material on this page.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <span class="feature__num">ii.</span>
+            <h3>Responsible synthetics</h3>
+            <p>Lab-made molecules let us replace animal and endangered materials, like animal musk, ambergris and wild oud.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <span class="feature__num">iii.</span>
+            <h3>Safe on skin</h3>
+            <p>Every formula is checked against the current IFRA standards before a single bottle is filled.</p>
+          </li>
+          <li class="feature" data-reveal>
+            <span class="feature__num">iv.</span>
+            <h3>Vegan &amp; cruelty-free</h3>
+            <p>No animal-derived ingredients, and nothing is ever tested on animals.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html">Sillage</a>
+          <p>Small-batch perfume, composed by hand and bottled in refillable glass since 2019.</p>
+        </div>
+        <div>
+          <h2 class="footer__title">Explore</h2>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Atelier</h2>
+          <ul class="footer__list">
+            <li>Tue – Fri · 11:00 – 19:00</li>
+            <li>Sat · 10:00 – 18:00</li>
+            <li>Consultations by appointment</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__title">Contact</h2>
+          <ul class="footer__list">
+            <li><a href="mailto:hello@sillage.example">hello@sillage.example</a></li>
+            <li><a href="about.html#visit">Visit the atelier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> Sillage. All rights reserved.</p>
+        <p>Vegan · Cruelty-free · Refillable</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
